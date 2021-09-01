@@ -1,0 +1,60 @@
+
+
+body { background-image: url("pozadina.jpg");background-size: cover;margin:0;padding: 0;}
+
+nav {background-color: gray;
+     width: 100%;
+     height: 48px ;
+     overflow: hidden;
+}
+
+nav ul {list-style-type:none;
+    overflow: hidden;
+    background-color:gray;
+    margin: 0px;
+    padding: 0px;
+    
+    }
+
+nav ul li {float:left}
+
+nav ul li a{padding: 15px;
+     display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+   }
+
+nav ul li a:hover {background-color: rgb(59, 59, 59);}
+
+.prvi { padding: 35px;
+  margin-top:50px;
+  border-style: solid;
+  border-radius: 15px ;
+  background-color: gray;}
+
+
+.podjela1{width:50%;
+  float:left;
+  padding: 35px;
+  border-style: solid;
+  border-radius: 15px ;
+  background-color: gray;}
+
+
+.logo{padding: 14px 14px;
+      float: left;}
+
+
+.stupac{ max-width: 33%;
+         border-style: solid;
+        border-radius: 15px;
+        float: left;
+        margin:0;
+        background-color: grey;
+       }
+
+
+h1 {font-style: bold;position: center;font-family: sans-serif;text-align: center;}
+
