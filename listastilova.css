@@ -2,6 +2,7 @@
 
 body { background-image: url("pozadina.jpg");background-size: cover;margin:0;padding: 0;}
 
+
 nav {background-color: gray;
      width: 100%;
      height: 48px ;
@@ -16,7 +17,7 @@ nav ul {list-style-type:none;
     
     }
 
-nav ul li {float:left}
+nav ul li {float: left;}
 
 nav ul li a{padding: 15px;
      display: block;
@@ -28,6 +29,8 @@ nav ul li a{padding: 15px;
 
 nav ul li a:hover {background-color: rgb(59, 59, 59);}
 
+h1 {font-style: bold;;font-family: sans-serif;text-align: center;}
+
 .prvi { padding: 35px;
   margin-top:50px;
   border-style: solid;
@@ -35,26 +38,43 @@ nav ul li a:hover {background-color: rgb(59, 59, 59);}
   background-color: gray;}
 
 
-.podjela1{width:50%;
-  float:left;
-  padding: 35px;
-  border-style: solid;
-  border-radius: 15px ;
-  background-color: gray;}
-
 
 .logo{padding: 14px 14px;
       float: left;}
 
 
-.stupac{ max-width: 33%;
+.stupac{
          border-style: solid;
         border-radius: 15px;
-        float: left;
         margin:0;
         background-color: grey;
        }
 
+.stupac p{font-size: 30px;}
 
-h1 {font-style: bold;position: center;font-family: sans-serif;text-align: center;}
+
+.flex2 ul li{height: 40vh;
+        flex-grow: 1;}
+
+.flex2 ul li:last-child{flex-grow: 10;}
+
+.flex2 ul li img {  max-height: 100%;
+                    min-width: 100%;
+                    object-fit: cover;
+                    vertical-align: bottom;}
+
+.flex2 ul{list-style-type: none;}
+
+
+button:hover{ background-color:gray;}
+
+ @media(min-width:768px){
+        .flex{ display: flex;}
+
+      
+       .flex2 ul {display: flex;
+                   flex-wrap: wrap;
+                  }
+
+      }
 
