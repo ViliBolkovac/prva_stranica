@@ -6,18 +6,21 @@ body { background-image: url("pozadina.jpg");background-size: cover;margin:0;pad
 nav {background-color: gray;
      width: 100%;
      height: 48px ;
-     overflow: hidden;
+     
+     
 }
 
 nav ul {list-style-type:none;
-    overflow: hidden;
     background-color:gray;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
     
     }
 
-nav ul li {float: left;}
+nav ul li {float: left;
+           flex: 1;}
 
 nav ul li a{padding: 15px;
      display: block;
@@ -65,16 +68,21 @@ h1 {font-style: bold;;font-family: sans-serif;text-align: center;}
 
 .flex2 ul{list-style-type: none;}
 
+.email {width: 50vw;height:50vh}
 
 button:hover{ background-color:gray;}
 
- @media(min-width:768px){
-        .flex{ display: flex;}
+@media(min-width:786px){
+     .flex {display: flex;}
 
-      
-       .flex2 ul {display: flex;
-                   flex-wrap: wrap;
-                  }
+     .flex2 ul{display: flex;
+               flex-wrap: wrap;}
+}
 
-      }
 
+@media(max-width:400px){
+
+     .flex2 ul li img {height: 40vh;width: 40vh;object-fit: contain;}
+
+     h1{ margin-top: 10vh;}
+}
