@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="listastilova.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Upitnik</title>
+<title>Stranica</title>
     </head>
 
     <body>

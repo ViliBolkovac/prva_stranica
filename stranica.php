@@ -1,6 +1,17 @@
 <?php include_once 'header.php'; ?>
+
+
+
     <div class="prvi">
         <h1 style="text-align: left;">Ja sam Vili</h1>
+      
+        <p>unesite ime:</p>
+     
+        <form method="post" action="ime.php">
+        <Input type="text" name="osoba">
+        <input type="submit">
+        </form>
+       
         <p>Student prve godine FERIT-a i sportaš </p>
     </div>
     <div>
@@ -30,5 +41,9 @@
             </p>
         </div>
     </div>
+
+
+
+
 
 <?php include_once 'footer.php'; ?>

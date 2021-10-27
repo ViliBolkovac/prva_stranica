@@ -27,9 +27,10 @@
     <input type="email">
     <p>Vaša poruka:</p>
     <textarea class="email"></textarea>
-    <input type="submit" value="submit">
+    <input type="submit" value="Submit">
 </form>
 </div>
 </div> 
+
 
 <?php include_once 'footer.php'; ?>
