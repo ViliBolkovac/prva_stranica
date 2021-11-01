@@ -3,16 +3,9 @@
 
 
     <div class="prvi">
-        <h1 style="text-align: left;">Ja sam Vili</h1>
-      
-        <p>unesite ime:</p>
-     
-        <form method="post" action="ime.php">
-        <Input type="text" name="osoba">
-        <input type="submit">
-        </form>
+        <h1 style="text-align: left;">Bok <?php echo $_POST['korisnickoime'] ?></h1>
        
-        <p>Student prve godine FERIT-a i sportaš </p>
+     
     </div>
     <div>
         <h1 class="prvi">Interesi:</h1>

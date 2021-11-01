@@ -68,6 +68,9 @@ h1 {font-style: bold;;font-family: sans-serif;text-align: center;}
 
 .flex2 ul{list-style-type: none;}
 
+.login {display: flex;
+          justify-content: center;}
+          
 .email {width: 50vw;height:50vh}
 
 button:hover{ background-color:gray;}

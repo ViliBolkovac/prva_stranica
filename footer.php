@@ -1,3 +1,3 @@
-<script src="index.js"></script>
+<script src="skripta.js"></script>
 </body>
 </html>
