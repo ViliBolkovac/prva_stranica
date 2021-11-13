@@ -22,6 +22,8 @@
     <input type="submit">
     </form>
     </div>
+
+
     <form  action='registracija.php' style="float: right;">
     <input type="submit"  value="Registriraj se" ></input>
     </form>

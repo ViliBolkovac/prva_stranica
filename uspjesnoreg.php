@@ -8,7 +8,7 @@
     if(isset($a)&&isset($b)&&!empty($a)&&!empty($b)&&!empty($korisnickoime)&&$a==$b)
     {
         echo 'Uspješno ste se registrirali';
-     
+        
     }
     else
     {
@@ -16,3 +16,4 @@
     }
      ?>
      </div>
+     
