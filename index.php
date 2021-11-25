@@ -1,3 +1,4 @@
+<?php include_once 'dhb.inc.php' ?>
 <!DOCTYPE html>
 <html>
 
@@ -9,12 +10,12 @@
 <title>Stranica</title>
 
  </head>
-
+ <?php include_once 'dhb.inc.php' ?>
  <body>
 
 <div class="prvi">
     <div class="login">
-    <form method="POST" action='stranica.php'>
+    <form method="POST" action='login.php'>
     <p>Korisničko ime:</p>
     <input type="text" name="korisnickoime">
     <p>Lozinka:</p>

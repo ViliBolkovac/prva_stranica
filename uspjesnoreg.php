@@ -2,10 +2,10 @@
 <?php include_once 'registracija.php'; ?>
 <div class="prvi">
 <?php 
-    $a=$_POST['lozinka1'];
-    $b=$_POST['lozinka2'];
-    $korisnickoime=$_POST['korisnickoime'];
-    if(isset($a)&&isset($b)&&!empty($a)&&!empty($b)&&!empty($korisnickoime)&&$a==$b)
+    $a=$_POST['reglozinka1'];
+    $b=$_POST['reglozinka2'];
+    $regkorisnickoime=$_POST['regkorisnickoime'];
+    if(isset($a)&&isset($b)&&!empty($a)&&!empty($b)&&!empty($regkorisnickoime)&&$a==$b)
     {
         echo 'Uspješno ste se registrirali';
         

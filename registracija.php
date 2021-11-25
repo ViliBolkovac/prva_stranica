@@ -1,3 +1,4 @@
+<?php include_once 'dhb.inc.php' ?>
 <!DOCTYPE html>
 <html>
 
@@ -11,16 +12,15 @@
  </head>
 
  <body>
-
 <div class="prvi">
     <div class="login">
     <form method="POST" action='uspjesnoreg.php'>
     <p>Korisničko ime:</p>
-    <input type="text" name="korisnickoime">
+    <input type="text" name="regkorisnickoime">
     <p>Lozinka:</p>
-    <input type="password" name="lozinka1">
+    <input type="password" name="reglozinka1">
     <p>Ponovno unesite lozinku:</p>
-    <input type="password" name="lozinka2">
+    <input type="password" name="reglozinka2">
     <input type="submit">
 
     </form>
