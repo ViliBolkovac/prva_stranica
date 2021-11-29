@@ -8,9 +8,9 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "Local instance MySQL80",
-            "username": "root",
+            "name": "xmpp_conn",
             "database": "prvastranica",
+            "username": "root",
             "password": "vili123"
         }
     ]

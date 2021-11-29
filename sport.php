@@ -2,13 +2,13 @@
     <h1>Sport</h1>
 <div class="flex2">
     <ul>
-        <li><img src="veslanje.jpg" ></li>
-        <li><img src="sportikone.jpg" ></li>
-         <li><img src="sportovi.jpg" ></li>
-        <li><img src="nogomet.jpg" ></li>
-         <li><img src="sport3.jpg" ></li>
-        <li><img src="sport2.jpg"></li>
-        <li><img src="basket.jpg"></li>
+        <li><img src="sport_slike&pozadina/veslanje.jpg" ></li>
+        <li><img src="sport_slike&pozadina/sportikone.jpg" ></li>
+         <li><img src="sport_slike&pozadina/sportovi.jpg" ></li>
+        <li><img src="sport_slike&pozadina/nogomet.jpg" ></li>
+         <li><img src="sport_slike&pozadina/sport3.jpg" ></li>
+        <li><img src="sport_slike&pozadina/sport2.jpg"></li>
+        <li><img src="sport_slike&pozadina/basket.jpg"></li>
     </ul>
 </div>
 

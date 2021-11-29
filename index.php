@@ -1,4 +1,3 @@
-<?php include_once 'dhb.inc.php' ?>
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +9,6 @@
 <title>Stranica</title>
 
  </head>
- <?php include_once 'dhb.inc.php' ?>
  <body>
 
 <div class="prvi">
