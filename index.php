@@ -13,12 +13,12 @@
 
 <div class="prvi">
     <div class="login">
-    <form method="POST" action='login.php'>
+    <form method="POST" action='ulogiravanje.inc.php'>
     <p>Korisničko ime:</p>
     <input type="text" name="korisnickoime">
     <p>Lozinka:</p>
-    <input type="password" name="lozinka">
-    <input type="submit">
+    <input type="password" name="zaporka">
+    <input type="submit" name="submit">
     </form>
     </div>
 

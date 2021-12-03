@@ -5,9 +5,16 @@
     $regkorisnickoime=$_POST['regkorisnickoime'];
     require_once 'dbh.inc.php';
     require_once 'funkcije.inc.php';
+    if(isset($loz1)&&isset($loz2)&&isset($regkorisnickoime)&&$loz1==$loz2)
+    {
 
         createUser($conn, $regkorisnickoime, $loz1);
-       
+    }
+
+    else
+    {
+        header("location:../registracija.php?error=badSignUp");
+    }
 
     
 

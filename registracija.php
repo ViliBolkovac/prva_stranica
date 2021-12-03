@@ -28,6 +28,15 @@
     <input type="submit"  value="Ulogiraj se" ></input>
     </form>
  
+<?php
+if(isset($_GET['error']))
+{
+    if($_GET['error']=='badSignUp')
+       {
+           echo 'pokušajte ponovno';
+       }
+}
+?>
 </div>
 
 
