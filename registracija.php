@@ -27,7 +27,7 @@
     <form  action='index.php' style="float: right;" >
     <input type="submit"  value="Ulogiraj se" ></input>
     </form>
- 
+ <div style="text-align: center;">
 <?php
 if(isset($_GET['error']))
 {
@@ -37,6 +37,7 @@ if(isset($_GET['error']))
        }
 }
 ?>
+ </div>
 </div>
 
 

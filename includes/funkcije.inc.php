@@ -19,35 +19,48 @@ function createUser($conn, $regkorisnickoime, $loz1)
 
 function korisnikpostoji($conn, $korisnickoime)
 {
-  $sql="SELECT * FROM korisnici WHERE korisnickoime = ? ";
+  $sql="SELECT * FROM korisnici WHERE korisnickoime = ?";
   $stmt= mysqli_stmt_init($conn);
-
+  mysqli_stmt_prepare($stmt, $sql);
 
   mysqli_stmt_bind_param($stmt,"s", $korisnickoime);
   mysqli_stmt_execute($stmt);
-  mysqli_stmt_close($stmt);
 
+$rezultat=mysqli_stmt_get_result($stmt);
+
+if($redak=mysqli_fetch_assoc($rezultat))
+{
+    return $redak;
+}
+else
+{
+    $nemakorisnika=false;
+    return $nemakorisnika;
+}
+
+  mysqli_stmt_close($stmt);
 }
 
 function loginUser($conn, $korisnickoime, $zaporka)
 {
    $korisnikpostoji=korisnikpostoji($conn, $korisnickoime);
-   if($korisnikpostoji == false)
+   if($korisnikpostoji ===false)
    {
-       header("location:../index.php?error=badLoginIn");
+       header("location:../index.php?error=userNonexistant");
        exit();
    } 
 
-   $hashedlogloz=$korisnikpostoji['zaporka'];
-   $provjerizaporku=password_verify($hashedlogloz, $zaporka);
-   if($provjerizaporku == false)
+   $hashedloz=$korisnikpostoji["zaporka"];
+   $provjerizaporku=password_verify($zaporka, $hashedloz);
+   if($provjerizaporku===false)
    {
        header("location:../index.php?error=badLogIn");
        exit();
    }
-   else if($provjerizaporku == true)
+   else if($provjerizaporku===true)
    {
        header("location:../stranica.php");
        exit();
    }
+
 }

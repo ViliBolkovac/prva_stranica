@@ -13,7 +13,7 @@
 
 <div class="prvi">
     <div class="login">
-    <form method="POST" action='ulogiravanje.inc.php'>
+    <form method="POST" action='includes/login.inc.php'>
     <p>Korisničko ime:</p>
     <input type="text" name="korisnickoime">
     <p>Lozinka:</p>
@@ -26,9 +26,22 @@
     <form  action='registracija.php' style="float: right;">
     <input type="submit"  value="Registriraj se" ></input>
     </form>
+    <div style="text-align: center;">
+    <?php
+    if(isset($_GET['error']))
+    {
+        if($_GET['error']=='badLogIn')
+         {
+           echo 'pokušajte ponovno';
+         }
+         if($_GET['error']=='userNonexistant')
+         {
+           echo 'pokušajte ponovno';
+         }
+    }
+    ?>
+    </div>
 </div>
-
-
 
  <?php include_once 'footer.php' ?>
     
