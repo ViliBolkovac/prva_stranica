@@ -59,8 +59,28 @@ function loginUser($conn, $korisnickoime, $zaporka)
    }
    else if($provjerizaporku===true)
    {
+       session_start();
+       $_SESSION["id"]=$korisnikpostoji["id"];
+       $_SESSION["korisnickoime"]=$korisnikpostoji["korisnickoime"];
+       $status="ulogiran";
+       
+
+       datumivrijeme($conn, $korisnickoime, $status);
        header("location:../stranica.php");
        exit();
    }
 
+}
+
+
+function datumivrijeme($conn, $korisnickoime, $status)
+{
+    $sql="INSERT INTO log_tablica (korisnickoime, datum, vrijeme, status_) VALUES (?, ?, ?, ?)";
+    $stmt=mysqli_stmt_init($conn);
+    mysqli_stmt_prepare($stmt,$sql);
+    $datum=date("d/m/Y");
+    $vrijeme=date("h:i:sa");
+    mysqli_stmt_bind_param($stmt, "ssss", $korisnickoime, $datum, $vrijeme, $status);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
 }

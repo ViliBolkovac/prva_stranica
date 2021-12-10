@@ -16,6 +16,7 @@
                 <li><a href="programiranje.php">Programiranje</a></li>
                 <li><a href="sport.php">Sport</a></li>
                 <li><a href="upitnik.php">Upitnik</a></li>
+                <li><a href="includes/logout.inc.php">Izlogirajte se</a></form></li>
             </ul>
         </nav>
     </header>
