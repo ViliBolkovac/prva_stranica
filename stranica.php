@@ -3,7 +3,7 @@
 
 
     <div class="prvi">
-        <h1 style="text-align: left;">Bok</h1>
+        <h1 style="text-align: left;"><?php session_start(); echo "Bok " . $_SESSION["korisnickoime"] ?></h1>
        
      
     </div>

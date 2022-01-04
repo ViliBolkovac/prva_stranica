@@ -8,6 +8,14 @@
     </head>
 
     <body>
+    <?php
+session_start();
+if(!isset($_SESSION["korisnickoime"]))
+{
+    header("location:../index.php");
+}
+
+?>
    <header>
         <nav>
             <div class="logo">VB</div>
