@@ -1,9 +1,10 @@
-<?php include_once 'header.php'; ?>
+<?php include_once 'session_check.php' ?>
+<?php include_once 'header.php';?>
 
 
 
     <div class="prvi">
-        <h1 style="text-align: left;"><?php session_start(); echo "Bok " . $_SESSION["korisnickoime"] ?></h1>
+        <h1 style="text-align: left;"><?php  echo "Bok " . $_SESSION["korisnickoime"] ?></h1>
        
      
     </div>

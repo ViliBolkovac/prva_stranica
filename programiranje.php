@@ -1,3 +1,4 @@
+<?php include_once 'session_check.php' ?>
 <?php include_once 'header.php'; ?>
     <h1>Programiranje</h1>
 
@@ -18,5 +19,9 @@
                 allowfullscreen></iframe>
         </div>
     </div>
-    
+<div class="prvi">
+<table>
+<?php include_once 'tablica.php'; ?>
+</table>
+</div>
 <?php include_once 'footer.php'; ?>

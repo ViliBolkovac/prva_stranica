@@ -1,3 +1,4 @@
+<?php include_once 'session_check.php' ?>
 <?php include_once 'header.php'; ?>
     <h1>Sport</h1>
 <div class="flex2">
